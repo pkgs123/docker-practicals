@@ -18,4 +18,17 @@ ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.ta
 
 ## To build an image we will use below commands
 ## -> docker build -t <IMAGE_NAME(i.e anyname)> <PATH_TO_DOCKERFILE>
-
+## NOTES:  1. > : Overwrite the data
+##         2. >> : Append the data
+##  RUN: instructions get executed when we build the image   - docker build 
+##  CMD: instructions get executed when we start a container - docker run
+#  
+#
+##  CMD: Instructions get executed when we start a container - docker run
+#        Override the instructions from the command line
+#
+#   ENTRYPOINT: Instructions get executed when we start a container - docker run
+#               cannot override the instructions from the command line  
+#
+#
+#
